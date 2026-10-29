@@ -22,7 +22,7 @@
   <div class="footer">Read-only operations view • Automatically refreshes every 60 seconds</div>
 </div>
 <script>
-const API_URL = 'PASTE_PUBLIC_OPERATIONS_URL_HERE';
+const API_URL = 'https://script.google.com/macros/s/AKfycbyhLljThdXFWLbIEzweRn8e_Jp5KNMYhfcIjK14t8aqHAeqZxc5WVjgkeSTnLqnPjKUdg/exec?action=publicOperations';
 const $=id=>document.getElementById(id);
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
 const money=v=>new Intl.NumberFormat('en-ZA',{style:'currency',currency:'ZAR'}).format(Number(v)||0);
